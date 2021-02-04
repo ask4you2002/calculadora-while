@@ -40,11 +40,9 @@ public class CalculadoraWhile
         int total = 0;
         if (b < a) {
             int x = 0;
-            int z = 0;
             x = a;
-            z = b;
+            a = b;
             b = x;
-            a = z;
         }
         if ( a == b ) {
             total = a;
