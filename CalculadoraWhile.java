@@ -1,4 +1,5 @@
 
+
 /**
  * Write a description of class CalculadoraWhile here.
  * 
@@ -73,6 +74,7 @@ public class CalculadoraWhile
             }
         } else {
             System.out.println("numero no puede ser < 1");
+            esPrimo = false;
         }
         return esPrimo;
     }
