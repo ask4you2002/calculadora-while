@@ -47,7 +47,7 @@ public class CalculadoraWhile
         if ( a == b ) {
             total = a;
         }
-        if ((a >= 0) & (b >= 0)) {
+        if ((a >= 0) && (b >= 0)) {
             index = a;
             total = a;
             while (! (index == b) ) {
@@ -59,6 +59,22 @@ public class CalculadoraWhile
             System.out.println("a o b no puede ser negativos");
         }
         return valorADevolver;
+    }
+    public boolean esPrimo(int n) {
+        boolean esPrimo = true;
+        if ( n > 1 ) {
+            int index = 2;
+            while ( ( index < n ) && ( esPrimo == true ) ) {
+                int resto = n % index ;
+                if (resto == 0 ) {
+                    esPrimo = false;
+                }
+                index ++;
+            }
+        } else {
+            System.out.println("numero no puede ser < 1");
+        }
+        return esPrimo;
     }
 }
 
